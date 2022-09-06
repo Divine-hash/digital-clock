@@ -104,12 +104,22 @@ h2 {
   background: #fff;
   width: 350px;
   height: 400px;
+  animation: showmodal 1s;
 }
 
 .modal.open {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@keyframes showmodal {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
 @media (max-width: 400px) {
