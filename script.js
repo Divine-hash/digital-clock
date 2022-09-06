@@ -2,6 +2,12 @@ const hoursElem = document.getElementById('hours');
 const minutesElem = document.getElementById('minutes');
 const secondsElem = document.getElementById('seconds');
 const ampmElem = document.getElementById('ampm');
+const btn = document.querySelector(".btn");
+const modal = document.querySelector(".modal");
+
+updateClock();
+btn.addEventListener('click', showModal);
+window.addEventListener('click', closeModal);
 
 function updateClock() {
   const date = new Date();
@@ -26,4 +32,12 @@ function updateClock() {
   setTimeout(() => updateClock(), 1000);
 }
 
-updateClock();
+function showModal() {
+  modal.classList.add('open');
+}
+
+function closeModal(e) {
+  if (e.target === modal) {
+    modal.classList.remove("open");
+  }
+}

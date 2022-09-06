@@ -88,6 +88,30 @@ h2 {
   transform: scale(.95);
 }
 
+/* modal styles */
+.modal {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.modal-content {
+  background: #fff;
+  width: 350px;
+  height: 400px;
+}
+
+.modal.open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 400px) {
  .clock span {
   font-size: 30px;
