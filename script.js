@@ -4,10 +4,11 @@ const secondsElem = document.getElementById('seconds');
 const ampmElem = document.getElementById('ampm');
 const btn = document.querySelector(".btn");
 const modal = document.querySelector(".modal");
+const closeBtn = document.querySelector(".close-btn");
 
 updateClock();
 btn.addEventListener('click', showModal);
-window.addEventListener('click', closeModal);
+closeBtn.addEventListener('click', clearModal);
 
 function updateClock() {
   const date = new Date();
@@ -36,8 +37,6 @@ function showModal() {
   modal.classList.add('open');
 }
 
-function closeModal(e) {
-  if (e.target === modal) {
-    modal.classList.remove("open");
-  }
+function clearModal() {
+  modal.classList.remove('open');
 }

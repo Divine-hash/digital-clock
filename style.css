@@ -105,12 +105,25 @@ h2 {
   width: 350px;
   height: 400px;
   animation: showmodal 1s;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .modal.open {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.close-btn {
+  width: 28px;
+  height: 28px;
+  transform: translateY(calc(-100% - 10px));
+}
+
+svg {
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes showmodal {
