@@ -11,7 +11,6 @@ html {
 }
 
 body {
-  color: #fff;
   width: 100%;
   height: 100vh;
   background-image: url("https://images.unsplash.com/photo-1501139083538-0139583c060f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
@@ -30,10 +29,12 @@ h2 {
   letter-spacing: 5px;
   margin-bottom: 10px;
   font-size: 16px;
+  color: #fff;
 }
 
 .clock {
   display: flex;
+  color: #fff;
   gap: 5px;
   margin-bottom: 20px;
 }
@@ -100,13 +101,16 @@ h2 {
   display: none;
 }
 
+.modal h3{
+  text-align: center;
+  padding: 5px;
+}
+
 .modal-content {
   background: #fff;
   width: 350px;
-  height: 400px;
   animation: showmodal 1s;
-  display: flex;
-  justify-content: flex-end;
+  position: relative;
 }
 
 .modal.open {
@@ -116,6 +120,9 @@ h2 {
 }
 
 .close-btn {
+  color: #fff;
+  position: absolute;
+  right: 0;
   width: 28px;
   height: 28px;
   transform: translateY(calc(-100% - 10px));
@@ -124,6 +131,18 @@ h2 {
 svg {
   width: 100%;
   height: 100%;
+}
+
+/* table styles */
+
+table {
+  text-align: center;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 10px;
 }
 
 @keyframes showmodal {
