@@ -52,7 +52,8 @@ function createTable() {
   <th>t</th> <th>f</th> <th>s</th> </tr><tr>`
 
   // days before first day of month
-  for (let i = date.getDay() - 1; i < 7; i++) {
+  console.log(date.getDay());
+  for (let i = 0; i < date.getDay(); i++) {
     table += '<td></td>';
   }
 
@@ -77,7 +78,7 @@ function createTable() {
 function hightLightCurrentDate() {
   for (let td of document.querySelectorAll('td')) {
     if (td.textContent == new Date().getDate()) {
-      td.style.background = "green";
+      td.style.background = "orange";
       td.style.color = "#fff"
     }
   }

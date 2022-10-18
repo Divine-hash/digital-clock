@@ -111,6 +111,7 @@ h2 {
   width: 350px;
   animation: showmodal 1s;
   position: relative;
+  padding: 8px;
 }
 
 .modal.open {
