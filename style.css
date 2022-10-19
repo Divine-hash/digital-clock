@@ -108,10 +108,9 @@ h2 {
 
 .modal-content {
   background: #fff;
-  width: 350px;
   animation: showmodal 1s;
   position: relative;
-  padding: 8px;
+  padding: 0 3px 0;
 }
 
 .modal.open {
@@ -163,10 +162,5 @@ td {
 
  .clock > div {
    width: 80px;
- }
-
- .modal-content {
-  width: 280px;
-  height: 300px;
  }
 }
